@@ -1,0 +1,58 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "b26e926dee2f903120ef98451aef338f95b672cfd7dc02dfd8118ec5c5d3a437"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "beautifulsoup4": {
+            "hashes": [
+                "sha256:034740f6cb549b4e932ae1ab975581e6103ac8f942200a0e9759065984391858",
+                "sha256:945065979fb8529dd2f37dbb58f00b661bdbcbebf954f93b32fdf5263ef35348",
+                "sha256:ba6d5c59906a85ac23dadfe5c88deaf3e179ef565f4898671253e50a78680718"
+            ],
+            "version": "==4.7.1"
+        },
+        "bs4": {
+            "hashes": [
+                "sha256:36ecea1fd7cc5c0c6e4a1ff075df26d50da647b75376626cc186e2212886dd3a"
+            ],
+            "index": "pypi",
+            "version": "==0.0.1"
+        },
+        "regex": {
+            "hashes": [
+                "sha256:020429dcf9b76cc7648a99c81b3a70154e45afebc81e0b85364457fe83b525e4",
+                "sha256:0552802b1c3f3c7e4fee8c85e904a13c48226020aa1a0593246888a1ac55aaaf",
+                "sha256:308965a80b92e1fec263ac1e4f1094317809a72bc4d26be2ec8a5fd026301175",
+                "sha256:4d627feef04eb626397aa7bdec772774f53d63a1dc7cc5ee4d1bd2786a769d19",
+                "sha256:93d1f9fcb1d25e0b4bd622eeba95b080262e7f8f55e5b43c76b8a5677e67334c",
+                "sha256:c3859bbf29b1345d694f069ddfe53d6907b0393fda5e3794c800ad02902d78e9",
+                "sha256:d56ce4c7b1a189094b9bee3b81c4aeb3f1ba3e375e91627ec8561b6ab483d0a8",
+                "sha256:ebc5ef4e10fa3312fa1967dc0a894e6bd985a046768171f042ac3974fadc9680",
+                "sha256:f9cd39066048066a4abe4c18fb213bc541339728005e72263f023742fb912585"
+            ],
+            "index": "pypi",
+            "version": "==2019.4.14"
+        },
+        "soupsieve": {
+            "hashes": [
+                "sha256:6898e82ecb03772a0d82bd0d0a10c0d6dcc342f77e0701d0ec4a8271be465ece",
+                "sha256:b20eff5e564529711544066d7dc0f7661df41232ae263619dede5059799cdfca"
+            ],
+            "version": "==1.9.1"
+        }
+    },
+    "develop": {}
+}
