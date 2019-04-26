@@ -1,0 +1,27 @@
+© 2019 Kantozuin
+
+This file is the license information of this repository.
+
+Python scrips are licensed under MIT license.
+See https://opensource.org/licenses/MIT
+
+Dictionary files are licensed under CC-BY-SA 3.0.
+See https://creativecommons.org/licenses/by-sa/3.0/legalcode
+These files use material from the following Wikipedia articles, which is released under CC-BY-SA 3.0.
+- https://ja.wikipedia.org/wiki/THE_IDOLM@STERの登場人物
+- https://ja.wikipedia.org/wiki/アイドルマスター_シンデレラガールズ
+- https://ja.wikipedia.org/wiki/アイドルマスター_ミリオンライブ!の登場人物
+- https://ja.wikipedia.org/wiki/アイドルマスター_SideM
+- https://ja.wikipedia.org/wiki/アイドルマスター_シャイニーカラーズ
+
+Scripts under MIT license:
+------------------------------
+imascraping/imascraping.py
+
+Dictionary files under CC-BY-SA 3.0:
+------------------------------
+dic/765pro.txt
+dic/cinderella.txt
+dic/millionlive.txt
+dic/sidem.txt
+dic/shinycolors/txt
