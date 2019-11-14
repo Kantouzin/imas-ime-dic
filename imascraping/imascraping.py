@@ -21,25 +21,23 @@ class FullName:
         r"\s?"
         r"(?P<kana_first>"
         r"(\p{Hiragana}|\p{Script_extensions=Katakana}|\w)*"
-        r")"
-    )
+        r")")
 
     fgn_pt = regex.compile(
         r"(?P<last>"
         r"^(\p{Script_extensions=Katakana})+$"
-        r")"
-    )
+        r")")
 
     all_kana_pt = regex.compile(
-        r"^(\p{Hiragana}|\p{Katakana})+$"
-    )
+        r"^(\p{Hiragana}|\p{Katakana})+$")
 
     kata_pt = regex.compile(
-        r"\p{Katakana}"
-    )
+        r"\p{Katakana}")
 
     def __init__(self, name):
-        self.last, self.first, self.kana_last, self.kana_first, self.is_fgn = self._init_name(name)
+        (self.last, self.first,
+         self.kana_last, self.kana_first,
+         self.is_fgn) = self._init_name(name)
 
     def _init_name(self, name):
         ja_match = FullName.ja_pt.search(name)
@@ -51,14 +49,12 @@ class FullName:
                 ja_match.group("first"),
                 self._kata_to_hira(ja_match.group("kana_last")),
                 self._kata_to_hira(ja_match.group("kana_first")),
-                False
-            )
+                False)
         elif fgn_match:
             return (
                 fgn_match.group("last"), "",
                 self._kata_to_hira(fgn_match.group("last")), "",
-                True
-            )
+                True)
         else:
             raise NameError
 
@@ -76,10 +72,14 @@ class FullName:
 
     @staticmethod
     def _kata_to_hira(text):
-        return "".join([chr(ord(ch) - 96) if FullName.kata_pt.match(ch) else ch for ch in text])
+        return "".join(
+            [chr(ord(ch) - 96) if FullName.kata_pt.match(ch) else ch
+             for ch in text])
 
     def __str__(self):
-        return self.last + self.first + "(" + self.kana_last + " " + self.kana_first + ")"
+        return (
+            self.last + self.first +
+            "(" + self.kana_last + " " + self.kana_first + ")")
 
 
 def formatting(li):
@@ -95,7 +95,9 @@ def make_dic(url_ja, begin_id, end_id, dic_name="dic.txt", tag_get="dt"):
     end_tag = soup.find(id=end_id).parent
     tag_list = begin_tag.find_next_siblings()
     tag_list = tag_list[:tag_list.index(end_tag)]
-    tag_list = BeautifulSoup("".join([str(tag) for tag in tag_list]), "html.parser").find_all(tag_get)
+    tag_list = BeautifulSoup(
+        "".join([str(tag) for tag in tag_list]), "html.parser"
+    ).find_all(tag_get)
 
     full_list = list()
     last_list = list()
@@ -121,7 +123,7 @@ def make_dic(url_ja, begin_id, end_id, dic_name="dic.txt", tag_get="dt"):
     full_list = list(dict.fromkeys(full_list))
     last_list = list(dict.fromkeys(last_list))
     first_list = list(dict.fromkeys(first_list))
-    
+
     path = Path("dic/")
     if not path.exists():
         path.mkdir()
@@ -143,34 +145,28 @@ def main():
     make_dic(
         "https://ja.wikipedia.org/wiki/THE_IDOLM@STERの登場人物",
         "765（ナムコ）プロダクション所属アイドル", "765プロダクション社員",
-        dic_name="765pro.txt", tag_get="h3"
-    )
+        dic_name="765pro.txt", tag_get="h3")
 
     make_dic(
         "https://ja.wikipedia.org/wiki/アイドルマスター_シンデレラガールズ",
         "登場キャラクター", "他プロダクション",
-        dic_name="cinderella.txt"
-    )
+        dic_name="cinderella.txt")
 
     make_dic(
         "https://ja.wikipedia.org/wiki/アイドルマスター_ミリオンライブ!の登場人物",
         "765THEATER_ALLSTARS", "765PRO_ALLSTARS",
-        dic_name="millionlive.txt"
-    )
+        dic_name="millionlive.txt")
 
     make_dic(
         "https://ja.wikipedia.org/wiki/アイドルマスター_SideM",
         "登場キャラクター", "その他の登場人物",
-        dic_name="sidem.txt"
-    )
+        dic_name="sidem.txt")
 
     make_dic(
         "https://ja.wikipedia.org/wiki/アイドルマスター_シャイニーカラーズ",
         "登場人物", "CD",
-        dic_name="shinycolors.txt"
-    )
+        dic_name="shinycolors.txt")
 
 
 if __name__ == "__main__":
     main()
-
