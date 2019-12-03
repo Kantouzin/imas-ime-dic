@@ -127,7 +127,7 @@ def make_dic(url_ja, begin_id, end_id, dic_name="dic.txt", tag_get="dt"):
     path = Path("dic/")
     if not path.exists():
         path.mkdir()
-    path /= Path(dic_name)
+    path /= Path(dic_name + ".txt")
 
     with path.open("w", encoding="utf-8", newline="\r\n") as file:
         file.write(formatting(full_list))
@@ -145,27 +145,27 @@ def main():
     make_dic(
         "https://ja.wikipedia.org/wiki/THE_IDOLM@STERの登場人物",
         "765（ナムコ）プロダクション所属アイドル", "765プロダクション社員",
-        dic_name="765pro.txt", tag_get="h3")
+        dic_name="765pro", tag_get="h3")
 
     make_dic(
         "https://ja.wikipedia.org/wiki/アイドルマスター_シンデレラガールズ",
         "登場キャラクター", "他プロダクション",
-        dic_name="cinderella.txt")
+        dic_name="cinderella")
 
     make_dic(
         "https://ja.wikipedia.org/wiki/アイドルマスター_ミリオンライブ!の登場人物",
         "765THEATER_ALLSTARS", "765PRO_ALLSTARS",
-        dic_name="millionlive.txt")
+        dic_name="millionlive")
 
     make_dic(
         "https://ja.wikipedia.org/wiki/アイドルマスター_SideM",
         "登場キャラクター", "その他の登場人物",
-        dic_name="sidem.txt")
+        dic_name="sidem")
 
     make_dic(
         "https://ja.wikipedia.org/wiki/アイドルマスター_シャイニーカラーズ",
         "登場人物", "CD",
-        dic_name="shinycolors.txt")
+        dic_name="shinycolors")
 
 
 if __name__ == "__main__":
