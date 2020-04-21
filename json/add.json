@@ -1,0 +1,95 @@
+{
+  "双海亜美": [
+    {
+      "last": "双海",
+      "first": "真美",
+      "kana_last": "ふたみ",
+      "kana_first": "まみ"
+    }
+  ],
+  "我那覇響": [
+    {
+      "last": "音無",
+      "first": "小鳥",
+      "kana_last": "おとなし",
+      "kana_first": "ことり"
+    },
+    {
+      "last": "高木",
+      "first": "順一朗",
+      "kana_last": "たかぎ",
+      "kana_first": "じゅんいちろう"
+    },
+    {
+      "last": "高木",
+      "first": "順二朗",
+      "kana_last": "たかぎ",
+      "kana_first": "じゅんじろう"
+    },
+    {
+      "last": "黒井",
+      "first": "崇男",
+      "kana_last": "くろい",
+      "kana_first": "たかお"
+    },
+    {
+      "last": "玲音",
+      "first": "",
+      "kana_last": "れおん",
+      "kana_first": "",
+      "is_fgn": true
+    },
+    {
+      "last": "詩花",
+      "first": "",
+      "kana_last": "しいか",
+      "kana_first": "",
+      "is_fgn": true
+    }
+  ],
+  "青木慶": [
+    {
+      "last": "千川",
+      "first": "ちひろ",
+      "kana_last": "せんかわ",
+      "kana_first": "ちひろ"
+    }
+  ],
+  "白石紬": [
+    {
+      "last": "青羽",
+      "first": "美咲",
+      "kana_last": "あおば",
+      "kana_first": "みさき"
+    },
+    {
+      "last": "早坂",
+      "first": "そら",
+      "kana_last": "はやさか",
+      "kana_first": "そら"
+    }
+  ],
+  "東雲荘一郎": [
+    {
+      "last": "アスラン=BB II世",
+      "first": "",
+      "kana_last": "あすらんべるぜびゅーと",
+      "kana_first": "",
+      "is_fgn": true
+    }
+  ],
+  "古論クリス": [
+    {
+      "last": "齋藤",
+      "first": "孝司",
+      "kana_last": "さいとう",
+      "kana_first": "たかし"
+    },
+    {
+      "last": "山村",
+      "first": "賢",
+      "kana_last": "やまむら",
+      "kana_first": "けん"
+    }
+  ]
+}
