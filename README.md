@@ -8,28 +8,29 @@
 (括弧内は事務所関係者等の人数です。)
 
 - 765PRO ALLSTARS
-  - 13 + 6 人
+  - 13 (+ 6) 人
 - CINDERELLA GIRLS
-  - 193 + 5 人
+  - 193 (+ 5) 人
 - MILLION LIVE!
-  - 39 + 2 人
+  - 39 (+ 2) 人
 - SideM
-  - 46 + 2 人
+  - 46 (+ 2) 人
 - SHINY COLORS
-  - 19 + 2 人
+  - 23 (+ 2) 人
 
 辞書は以下のように配置しています。
-辞書内には、`人名`・`姓`・`名`が含まれます。`人名`はすべての人物を含みますが、`姓`・`名`それぞれ仮名のみのものは含みません。
+辞書内には、`人名`・`姓`・`名`が含まれます。
+`人名`はすべての人物を含みますが、`姓`・`名`それぞれ仮名のみのものは含みません。
 
-- dic/765pro.txt
+- [dic/765pro.txt](dic/765pro.txt)
   - 765PRO ALLSTARS
-- dic/cinderella.txt
+- [dic/cinderella.txt](dic/cinderella.txt)
   - CINDERELLA GIRLS
-- dic/millionlive.txt
+- [dic/millionlive.txt](dic/millionlive.txt)
   - MILLION LIVE!
-- dic/sidem.txt
+- [dic/sidem.txt](dic/sidem.txt)
   - SideM
-- dic/shinycolors.txt
+- [dic/shinycolors.txt](dic/shinycolors.txt)
   - SHINY COLORS
 
 ## 環境
