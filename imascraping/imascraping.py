@@ -229,7 +229,7 @@ def main():
     dic_generator_list = [
         DicGenerator(
             "https://ja.wikipedia.org/wiki/THE_IDOLM@STERの登場人物",
-            "765（ナムコ）プロダクション所属アイドル", "765プロダクション社員",
+            "765PRO_ALLSTARS", "765プロダクション社員",
             dic_name="765pro", tag_get="h3"),
         DicGenerator(
             "https://ja.wikipedia.org/wiki/アイドルマスター_シンデレラガールズ",
@@ -238,7 +238,7 @@ def main():
             dic_name="cinderella"),
         DicGenerator(
             "https://ja.wikipedia.org/wiki/アイドルマスター_ミリオンライブ!の登場人物",
-            "765THEATER_ALLSTARS", "765PRO_ALLSTARS",
+            "MILLIONSTARS", "765PRO_ALLSTARS",
             dic_name="millionlive"),
         DicGenerator(
             "https://ja.wikipedia.org/wiki/アイドルマスター_SideM",
