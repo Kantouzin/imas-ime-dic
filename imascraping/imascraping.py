@@ -232,8 +232,8 @@ def main():
             "765PRO_ALLSTARS", "765プロダクション社員",
             dic_name="765pro", tag_get="h3"),
         DicGenerator(
-            "https://ja.wikipedia.org/wiki/アイドルマスター_シンデレラガールズ",
-            "登場キャラクター",
+            "https://ja.wikipedia.org/wiki/アイドルマスター_シンデレラガールズの登場人物",
+            "キュート",
             "他シリーズ出身のアイドル達",
             dic_name="cinderella"),
         DicGenerator(
@@ -241,8 +241,8 @@ def main():
             "MILLIONSTARS", "765PRO_ALLSTARS",
             dic_name="millionlive"),
         DicGenerator(
-            "https://ja.wikipedia.org/wiki/アイドルマスター_SideM",
-            "登場キャラクター", "その他の登場人物",
+            "https://ja.wikipedia.org/wiki/アイドルマスター_SideMの登場人物",
+            "概要", "その他の登場人物",
             dic_name="sidem"),
         DicGenerator(
             "https://ja.wikipedia.org/wiki/アイドルマスター_シャイニーカラーズ",
