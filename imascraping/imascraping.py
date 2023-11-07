@@ -188,7 +188,7 @@ class DicGenerator:
         return name_list
 
     def replace_name_list(self, name_list):
-        with Path("json/replace.json").open("r") as f:
+        with Path("json/replace.json").open("r", encoding="utf-8") as f:
             replace_dic = json.load(f)
 
         new_name_list = name_list
@@ -201,7 +201,7 @@ class DicGenerator:
         return new_name_list
 
     def add_name_list(self, name_list):
-        with Path("json/add.json").open("r") as f:
+        with Path("json/add.json").open("r", encoding="utf-8") as f:
             add_dic = json.load(f)
 
         new_name_list = name_list
